@@ -82,7 +82,8 @@ const Card = () => {
         
         delay1(currentCardId)
         setCurrentCardId(currentCardId+1) 
-        
+        setShowAlert2(false);
+        setShowAlert3(false);
         setShowAlert(true);
      setTimeout(() => {
       setShowAlert(false);
@@ -92,7 +93,9 @@ const Card = () => {
     function delay2forcard(){
         
        delay2(currentCardId)
-       setCurrentCardId(currentCardId+1) ;  
+       setCurrentCardId(currentCardId+1) ; 
+       setShowAlert(false);
+       setShowAlert3(false); 
        setShowAlert2(true);
      setTimeout(() => {
       setShowAlert2(false);
@@ -102,8 +105,11 @@ const Card = () => {
     function delay3forcard(){
         
         delay3(currentCardId)
-        setCurrentCardId(currentCardId+1) ;  
+        setCurrentCardId(currentCardId+1) ;
+        setShowAlert(false);
+        setShowAlert2(false);  
         setShowAlert3(true);
+        
      setTimeout(() => {
       setShowAlert3(false);
     }, 1000); 
