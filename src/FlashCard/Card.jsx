@@ -86,7 +86,7 @@ const Card = () => {
         setShowAlert(true);
      setTimeout(() => {
       setShowAlert(false);
-    }, 1000); // 1000 milisaniye (1 saniye) sonra uyarıyı gizler
+    }, 1000);
     }
 
     function delay2forcard(){
@@ -96,7 +96,7 @@ const Card = () => {
        setShowAlert2(true);
      setTimeout(() => {
       setShowAlert2(false);
-    }, 1000); // 1000 milisaniye (1 saniye) sonra uyarıyı gizler
+    }, 1000); 
     }
 
     function delay3forcard(){
@@ -106,7 +106,7 @@ const Card = () => {
         setShowAlert3(true);
      setTimeout(() => {
       setShowAlert3(false);
-    }, 1000); // 1000 milisaniye (1 saniye) sonra uyarıyı gizler
+    }, 1000); 
     }
 
     const [showAlert, setShowAlert] = useState(false);
