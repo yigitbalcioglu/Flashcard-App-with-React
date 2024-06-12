@@ -1,7 +1,7 @@
 import { db } from './indexxeddb';  
   
   
-  export async function addToIndexedDB(){
+export async function addToIndexedDB(){
 
     try {
       const result = await fetchAllCards();
@@ -22,7 +22,7 @@ import { db } from './indexxeddb';
     }
   }
   
-  export async function fetchAllCards() {
+export async function fetchAllCards() {
     const authVar = "e22f802bd475b82b83d5db2d5901d356bae71dbde0a766c2c1e08ef27b468e2e2e8218c0ddf1370cbbc489522d3506c469616764686edc6a48e21f46142c76b3084a829a9aad030717ff0730488ce3283f4d4a34cc23059cfaf13fabd54b1d4f04404c82301455d8cd28c72b1b5d2355fc48dfc8e2437aee44ab4abaedc9306e";
     let allCards = [];
     let page = 1;
